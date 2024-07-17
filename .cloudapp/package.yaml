@@ -1,8 +1,18 @@
 # 应用 ID，需修改成自己的应用 ID（在开发者中心获取）
-id: ${packageId}
+id: pkg-7omg5obb
 
 # 安装参数，通过 widget 来声明安装表单
 args:
   - name: network
     label: 网络选择
     widget: subnet-select
+  - name: switch
+    label: 开关组件
+    widget: switch
+  - name: text
+    label: 输入框
+    widget: input
+    defaultValue: 默认输入值
+  - name: securityGroup
+    label: 安全组
+    widget: security-group-select

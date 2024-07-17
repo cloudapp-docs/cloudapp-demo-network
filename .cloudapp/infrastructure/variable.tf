@@ -14,3 +14,25 @@ variable "network" {
     })
   })
 }
+
+# 接收开关组件输入
+variable "switch" {
+  type = bool
+}
+
+# 接收输入框的值
+variable "text" {
+  type = string
+}
+
+# 接收安全组选择的值
+variable "securityGroup" {
+  type = object({
+    region    = string
+    region_id = string
+    security_group = object({
+      id = string
+    })
+    security_groups = list(string)
+  })
+}
